@@ -35,14 +35,6 @@ class Home extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(18),
         child: Column(children: [
-          /* FloatingActionButton(
-              onPressed: () async {
-                List<Trips> trips = await TripsService().fetchData();
-                for (var trip in trips) {
-                  debugPrint('Viatge: ${trip.viatge}');
-                }            },
-            child: const Icon(Icons.refresh),
-          ), */
           Title(
             color: AppStyles.principal,
             child: const Text('Viatges', style: TextStyle(fontSize: 24),),
@@ -54,61 +46,7 @@ class Home extends StatelessWidget {
               future: trips,
               builder: (context, snapshot){
                 if(snapshot.hasData) {
-                   var trips = snapshot.data!;
-                  // return Expanded(
-                  //   child: ListView.builder(
-                  //       itemCount: trips.length,
-                  //       itemBuilder: (context, index) {
-                  //         var trip = trips[index];
-                  //           return InkWell(
-                  //             onTap: (){
-                  //               Navigator.push(
-                  //                   context,
-                  //                   MaterialPageRoute(builder: (context) => IndividualTrip(trips: trip,))
-                  //               );
-                  //             },
-                  //             child: Card(
-                  //               shape: RoundedRectangleBorder(
-                  //                 side: const BorderSide(color: AppStyles.principal),
-                  //                 borderRadius: BorderRadius.circular(15),
-                  //               ),
-                  //               child: Padding(
-                  //                 padding: const EdgeInsets.all(10),
-                  //                 child: Row(
-                  //                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  //                   children: [
-                  //                     Column(
-                  //                       crossAxisAlignment: CrossAxisAlignment.start,
-                  //                       children: [
-                  //                         Text(
-                  //                           trip.viatge,
-                  //                           style: const TextStyle(fontSize: 20),
-                  //                         ),
-                  //                         Text(trip.dates),
-                  //                       ],
-                  //                     ),
-                  //                     const SizedBox(
-                  //                       width: 20,
-                  //                     ),
-                  //                     InkWell(
-                  //                       onTap: (){
-                  //                         // codi per favorite
-                  //                       },
-                  //                       child: const Icon(
-                  //                         Icons.favorite_border_outlined,
-                  //                         color: AppStyles.principal,
-                  //                       ),
-                  //                     ),
-                  //                   ],
-                  //                 ),
-                  //
-                  //
-                  //               ),
-                  //             ),
-                  //           );
-                  //         }
-                  //       ),
-                  // );
+                  var trips = snapshot.data!;
                   return Expanded(
                     child: ListView(
                       children: [

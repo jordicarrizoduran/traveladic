@@ -47,8 +47,7 @@ class IndividualTrip extends StatelessWidget {
             ),
             AppStyles.separator,
             const Text('Itinerari', style: TextStyle(fontSize: 30),),
-            SizedBox(
-              height: 100,
+            Expanded(
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -69,7 +68,7 @@ class IndividualTrip extends StatelessWidget {
                                 Column(
                                   children: [
                                     Text(
-                                      'Dia $dia.dia',
+                                      'Dia ${dia.dia}',
                                       style: const TextStyle(fontSize: 20),
                                     ),
                                     Text(
