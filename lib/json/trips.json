@@ -10,35 +10,43 @@
     "Itinerari":[
       {
         "dia": "1",
-        "titol": "Arribada"
+        "titol": "Arribada",
+        "descripcio": "descripció dia 1"
       },
       {
         "dia": "2",
-        "titol": "Penya-segats de Vestmanna"
+        "titol": "Penya-segats de Vestmanna",
+        "descripcio": "descripció dia 2"
       },
       {
         "dia": "3",
-        "titol": "Tórshavn i Kirkjubøur"
+        "titol": "Tórshavn i Kirkjubøur",
+        "descripcio": "descripció dia 3"
       },
       {
         "dia": "4",
-        "titol": "Vagar i Mykines"
+        "titol": "Vagar i Mykines",
+        "descripcio": "descripció dia 4"
       },
       {
         "dia": "5",
-        "titol": "Streymoy i Eysturoy"
+        "titol": "Streymoy i Eysturoy",
+        "descripcio": "descripció dia 5"
       },
       {
         "dia": "6",
-        "titol": "Illes del nord"
+        "titol": "Illes del nord",
+        "descripcio": "descripció dia 6"
       },
       {
         "dia": "7",
-        "titol": "Gjógv"
+        "titol": "Gjógv",
+        "descripcio": "descripció dia 7"
       },
       {
         "dia": "8",
-        "titol": "Gjógv"
+        "titol": "Gjógv",
+        "descripcio": "descripció dia 8"
       }
     ],
     "Inclos":[
@@ -105,35 +113,43 @@
     "Itinerari":[
       {
         "dia": "1",
-        "titol": "Arribada"
+        "titol": "Arribada",
+        "descripcio": "descripció dia 1"
       },
       {
         "dia": "2",
-        "titol": "Penya-segats de Vestmanna"
+        "titol": "Penya-segats de Vestmanna",
+        "descripcio": "descripció dia 2"
       },
       {
         "dia": "3",
-        "titol": "Tórshavn i Kirkjubøur"
+        "titol": "Tórshavn i Kirkjubøur",
+        "descripcio": "descripció dia 3"
       },
       {
         "dia": "4",
-        "titol": "Vagar i Mykines"
+        "titol": "Vagar i Mykines",
+        "descripcio": "descripció dia 4"
       },
       {
         "dia": "5",
-        "titol": "Streymoy i Eysturoy"
+        "titol": "Streymoy i Eysturoy",
+        "descripcio": "descripció dia 5"
       },
       {
         "dia": "6",
-        "titol": "Illes del nord"
+        "titol": "Illes del nord",
+        "descripcio": "descripció dia 6"
       },
       {
         "dia": "7",
-        "titol": "Gjógv"
+        "titol": "Gjógv",
+        "descripcio": "descripció dia 7"
       },
       {
         "dia": "8",
-        "titol": "Gjógv"
+        "titol": "Gjógv",
+        "descripcio": "descripció dia 8"
       }
     ],
     "Inclos":[
@@ -201,35 +217,43 @@
     "Itinerari":[
       {
         "dia": "1",
-        "titol": "Arribada"
+        "titol": "Arribada",
+        "descripcio": "descripció dia 1"
       },
       {
         "dia": "2",
-        "titol": "Penya-segats de Vestmanna"
+        "titol": "Penya-segats de Vestmanna",
+        "descripcio": "descripció dia 2"
       },
       {
         "dia": "3",
-        "titol": "Tórshavn i Kirkjubøur"
+        "titol": "Tórshavn i Kirkjubøur",
+        "descripcio": "descripció dia 3"
       },
       {
         "dia": "4",
-        "titol": "Vagar i Mykines"
+        "titol": "Vagar i Mykines",
+        "descripcio": "descripció dia 4"
       },
       {
         "dia": "5",
-        "titol": "Streymoy i Eysturoy"
+        "titol": "Streymoy i Eysturoy",
+        "descripcio": "descripció dia 5"
       },
       {
         "dia": "6",
-        "titol": "Illes del nord"
+        "titol": "Illes del nord",
+        "descripcio": "descripció dia 6"
       },
       {
         "dia": "7",
-        "titol": "Gjógv"
+        "titol": "Gjógv",
+        "descripcio": "descripció dia 7"
       },
       {
         "dia": "8",
-        "titol": "Gjógv"
+        "titol": "Gjógv",
+        "descripcio": "descripció dia 8"
       }
     ],
     "Inclos":[

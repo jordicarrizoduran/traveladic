@@ -67,19 +67,23 @@ class Trips {
 class Itinerari {
   String dia;
   String titol;
+  String descripcio;
 
   Itinerari({
     required this.dia,
     required this.titol,
+    required this.descripcio,
   });
 
   factory Itinerari.fromJson(Map<String, dynamic> json) => Itinerari(
     dia: json["dia"],
     titol: json["titol"],
+    descripcio: json["descripcio"],
   );
 
   Map<String, dynamic> toJson() => {
     "dia": dia,
     "titol": titol,
+    "descripcio": descripcio,
   };
 }

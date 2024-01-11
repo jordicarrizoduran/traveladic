@@ -47,7 +47,8 @@ class IndividualTrip extends StatelessWidget {
             ),
             AppStyles.separator,
             const Text('Itinerari', style: TextStyle(fontSize: 30),),
-            Expanded(
+            SizedBox(
+              height: 100,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -59,25 +60,15 @@ class IndividualTrip extends StatelessWidget {
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(10),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        child: Column(
                           children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Column(
-                                  children: [
-                                    Text(
-                                      'Dia ${dia.dia}',
-                                      style: const TextStyle(fontSize: 20),
-                                    ),
-                                    Text(
-                                      dia.titol,
-                                      style: const TextStyle(fontSize: 16),
-                                    ),
-                                  ],
-                                )
-                              ],
+                            Text(
+                              'Dia${dia.dia}',
+                              style: const TextStyle(fontSize: 20),
+                            ),
+                            Text(
+                              dia.titol,
+                              style: const TextStyle(fontSize: 16),
                             ),
                           ],
                         ),
