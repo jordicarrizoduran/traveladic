@@ -65,45 +65,21 @@ class Trips {
 }
 
 class Itinerari {
-  String dia1;
-  String dia2;
-  String dia3;
-  String dia4;
-  String dia5;
-  String dia6;
-  String dia7;
-  String dia8;
+  String dia;
+  String titol;
 
   Itinerari({
-    required this.dia1,
-    required this.dia2,
-    required this.dia3,
-    required this.dia4,
-    required this.dia5,
-    required this.dia6,
-    required this.dia7,
-    required this.dia8,
+    required this.dia,
+    required this.titol,
   });
 
   factory Itinerari.fromJson(Map<String, dynamic> json) => Itinerari(
-    dia1: json["Dia 1"],
-    dia2: json["Dia 2"],
-    dia3: json["Dia 3"],
-    dia4: json["Dia 4"],
-    dia5: json["Dia 5"],
-    dia6: json["Dia 6"],
-    dia7: json["Dia 7"],
-    dia8: json["Dia 8"],
+    dia: json["dia"],
+    titol: json["titol"],
   );
 
   Map<String, dynamic> toJson() => {
-    "Dia 1": dia1,
-    "Dia 2": dia2,
-    "Dia 3": dia3,
-    "Dia 4": dia4,
-    "Dia 5": dia5,
-    "Dia 6": dia6,
-    "Dia 7": dia7,
-    "Dia 8": dia8,
+    "dia": dia,
+    "titol": titol,
   };
 }

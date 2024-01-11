@@ -46,7 +46,48 @@ class IndividualTrip extends StatelessWidget {
               style: const TextStyle(fontSize: 16),
             ),
             AppStyles.separator,
-            const Text('hola'),
+            const Text('Itinerari', style: TextStyle(fontSize: 30),),
+            SizedBox(
+              height: 100,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  for (var dia in trips.itinerari)
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        side: const BorderSide(color: AppStyles.principal),
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Column(
+                                  children: [
+                                    Text(
+                                      'Dia $dia.dia',
+                                      style: const TextStyle(fontSize: 20),
+                                    ),
+                                    Text(
+                                      dia.titol,
+                                      style: const TextStyle(fontSize: 16),
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    )
+                ],
+              ),
+            )
+
           ],
         ),
       ),

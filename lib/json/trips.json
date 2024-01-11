@@ -7,16 +7,38 @@
     "Dates": "1-8 agost",
     "Idioma": "Català",
     "Hotel": "Hilton Garden Inn",
-    "Itinerari": [
+    "Itinerari":[
       {
-        "Dia 1": "Arribada",
-        "Dia 2": "Penya-segats de Vestmanna",
-        "Dia 3": "Tórshavn i Kirkjubøur",
-        "Dia 4": "Vagar i Mykines",
-        "Dia 5": "Streymoy i Eysturoy",
-        "Dia 6": "Illes del nord",
-        "Dia 7": "Gjógv",
-        "Dia 8": "Tornada"
+        "dia": "1",
+        "titol": "Arribada"
+      },
+      {
+        "dia": "2",
+        "titol": "Penya-segats de Vestmanna"
+      },
+      {
+        "dia": "3",
+        "titol": "Tórshavn i Kirkjubøur"
+      },
+      {
+        "dia": "4",
+        "titol": "Vagar i Mykines"
+      },
+      {
+        "dia": "5",
+        "titol": "Streymoy i Eysturoy"
+      },
+      {
+        "dia": "6",
+        "titol": "Illes del nord"
+      },
+      {
+        "dia": "7",
+        "titol": "Gjógv"
+      },
+      {
+        "dia": "8",
+        "titol": "Gjógv"
       }
     ],
     "Inclos":[
@@ -80,16 +102,38 @@
     "Dates": "8-15 agost",
     "Idioma": "Català",
     "Hotel": "Hilton Garden Inn",
-    "Itinerari": [
+    "Itinerari":[
       {
-        "Dia 1": "Arribada",
-        "Dia 2": "Penya-segats de Vestmanna",
-        "Dia 3": "Tórshavn i Kirkjubøur",
-        "Dia 4": "Vagar i Mykines",
-        "Dia 5": "Streymoy i Eysturoy",
-        "Dia 6": "Illes del nord",
-        "Dia 7": "Gjógv",
-        "Dia 8": "Tornada"
+        "dia": "1",
+        "titol": "Arribada"
+      },
+      {
+        "dia": "2",
+        "titol": "Penya-segats de Vestmanna"
+      },
+      {
+        "dia": "3",
+        "titol": "Tórshavn i Kirkjubøur"
+      },
+      {
+        "dia": "4",
+        "titol": "Vagar i Mykines"
+      },
+      {
+        "dia": "5",
+        "titol": "Streymoy i Eysturoy"
+      },
+      {
+        "dia": "6",
+        "titol": "Illes del nord"
+      },
+      {
+        "dia": "7",
+        "titol": "Gjógv"
+      },
+      {
+        "dia": "8",
+        "titol": "Gjógv"
       }
     ],
     "Inclos":[
@@ -154,16 +198,38 @@
     "Dates": "16-23 agost",
     "Idioma": "Català",
     "Hotel": "Hilton Garden Inn",
-    "Itinerari": [
+    "Itinerari":[
       {
-        "Dia 1": "Arribada",
-        "Dia 2": "Penya-segats de Vestmanna",
-        "Dia 3": "Tórshavn i Kirkjubøur",
-        "Dia 4": "Vagar i Mykines",
-        "Dia 5": "Streymoy i Eysturoy",
-        "Dia 6": "Illes del nord",
-        "Dia 7": "Gjógv",
-        "Dia 8": "Tornada"
+        "dia": "1",
+        "titol": "Arribada"
+      },
+      {
+        "dia": "2",
+        "titol": "Penya-segats de Vestmanna"
+      },
+      {
+        "dia": "3",
+        "titol": "Tórshavn i Kirkjubøur"
+      },
+      {
+        "dia": "4",
+        "titol": "Vagar i Mykines"
+      },
+      {
+        "dia": "5",
+        "titol": "Streymoy i Eysturoy"
+      },
+      {
+        "dia": "6",
+        "titol": "Illes del nord"
+      },
+      {
+        "dia": "7",
+        "titol": "Gjógv"
+      },
+      {
+        "dia": "8",
+        "titol": "Gjógv"
       }
     ],
     "Inclos":[
