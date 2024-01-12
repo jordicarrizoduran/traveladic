@@ -17,7 +17,6 @@ class Home extends StatelessWidget {
           title: const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-            Column(),
             Column(children: [
               Text('Travelàdic'),
             ]),
@@ -122,12 +121,15 @@ class Home extends StatelessWidget {
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(
-              icon: Icon(Icons.home), label: 'Pàgina principal'),
+            icon: Icon(Icons.home), label: 'Pàgina principal'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.airplanemode_on), label: 'El teu viatge'),
+            icon: Icon(Icons.airplanemode_on), label: 'El teu viatge'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.phone), label: "Contacta'ns"),
+            icon: Icon(Icons.phone), label: "Contacta'ns"),
         ],
+
+        // Per fer CALLS --> https://www.youtube.com/watch?v=ui4oF6qzAE8
+
       ),
     );
   }
