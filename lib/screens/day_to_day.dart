@@ -29,7 +29,7 @@ class DayToDay extends StatelessWidget {
         ),
     ),
     body: Padding(
-      padding: const EdgeInsets.all(18),
+      padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 15),
         child: Column(
           children: [
             Text('Dia${dia.dia}'),

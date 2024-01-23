@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:traveladic_app/screens/day_to_day.dart';
-import 'package:traveladic_app/screens/pre_viatge.dart';
+import 'package:traveladic_app/screens/luggage.dart';
+import 'package:traveladic_app/screens/pre_trip.dart';
 
 import '../models/trips_model.dart';
 import '../styles/app_styles.dart';
@@ -9,11 +10,8 @@ class IndividualTrip extends StatelessWidget {
   const IndividualTrip({super.key, required this.trips});
   final Trips trips;
 
-
   @override
   Widget build(BuildContext context) {
-
-
     return Scaffold(
       appBar: AppBar(
         title: const Row(
@@ -37,20 +35,26 @@ class IndividualTrip extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(18),
+          padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 15),
           child: Column(
             children: [
               Title(
                 color: AppStyles.principal,
-                child: Text(trips.viatge, style: const TextStyle(fontSize: 24),textAlign: TextAlign.center,),
+                child: Text(
+                  trips.viatge,
+                  style: const TextStyle(fontSize: 24),
+                  textAlign: TextAlign.center,
+                ),
               ),
-        
               Text(
                 '${trips.dates} / ${trips.pais}',
                 style: const TextStyle(fontSize: 16),
               ),
               AppStyles.separator,
-              const Text('Itinerari', style: TextStyle(fontSize: 30),),
+              const Text(
+                'Itinerari',
+                style: TextStyle(fontSize: 30),
+              ),
               SizedBox(
                 height: 130,
                 child: ListView(
@@ -60,15 +64,16 @@ class IndividualTrip extends StatelessWidget {
                       SizedBox(
                         width: 130,
                         child: InkWell(
-                          onTap: (){
+                          onTap: () {
                             Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => DayToDay(dia: dia))
-                            );
+                                MaterialPageRoute(
+                                    builder: (context) => DayToDay(dia: dia)));
                           },
                           child: Card(
                             shape: RoundedRectangleBorder(
-                              side: const BorderSide(color: AppStyles.principal),
+                              side:
+                                  const BorderSide(color: AppStyles.principal),
                               borderRadius: BorderRadius.circular(15),
                             ),
                             child: Padding(
@@ -79,7 +84,9 @@ class IndividualTrip extends StatelessWidget {
                                 children: [
                                   Text(
                                     'Dia${dia.dia}',
-                                    style: const TextStyle(fontSize: 20,),
+                                    style: const TextStyle(
+                                      fontSize: 20,
+                                    ),
                                     textAlign: TextAlign.center,
                                   ),
                                   Text(
@@ -96,47 +103,30 @@ class IndividualTrip extends StatelessWidget {
                   ],
                 ),
               ),
-              AppStyles.separator,
+              AppStyles.bigSeparator,
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Column(
                     children: [
-                      const Text('Abans de viatjar', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
+                      const Text(
+                        'Abans de viatjar',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
                       InkWell(
-                        onTap: (){
+                        onTap: () {
                           Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => PreViatge(trips.abansDeViatjar))
-                          );
+                              MaterialPageRoute(
+                                  builder: (context) => PreTrip(
+                                        abansDeViatjar: trips.abansDeViatjar,
+                                      )));
                         },
                         child: Card(
-                          shape: RoundedRectangleBorder(
-                            side: const BorderSide(color: AppStyles.principal),
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                          child: const Padding(
-                            padding: EdgeInsets.all(10),
-                            child: Column(
-                              children: [
-                                Icon(
-                                  Icons.travel_explore,
-                                )
-                              ],
-                            )
-                          )
-
-                        ),
-                      ),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      const Text('Essencial de maleta', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
-                      InkWell(
-                        child: Card(
                             shape: RoundedRectangleBorder(
-                              side: const BorderSide(color: AppStyles.principal),
+                              side:
+                                  const BorderSide(color: AppStyles.principal),
                               borderRadius: BorderRadius.circular(15),
                             ),
                             child: const Padding(
@@ -144,13 +134,46 @@ class IndividualTrip extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     Icon(
-                                      Icons.luggage
+                                      Icons.info,
+                                      size: 100,
                                     )
                                   ],
-                                )
-                            )
-
-                        ),
+                                ))),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      const Text(
+                        'Essencial de maleta',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Luggage(
+                                      essencialsMaleta:
+                                          trips.essencialsMaleta)));
+                        },
+                        child: Card(
+                            shape: RoundedRectangleBorder(
+                              side:
+                                  const BorderSide(color: AppStyles.principal),
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            child: const Padding(
+                                padding: EdgeInsets.all(10),
+                                child: Column(
+                                  children: [
+                                    Icon(
+                                      Icons.luggage,
+                                      size: 100,
+                                    )
+                                  ],
+                                ))),
                       ),
                     ],
                   )
@@ -168,7 +191,6 @@ class IndividualTrip extends StatelessWidget {
               icon: Icon(Icons.airplanemode_on), label: 'El teu viatge'),
           BottomNavigationBarItem(
               icon: Icon(Icons.phone), label: "Contacta'ns"),
-
         ],
       ),
     );
