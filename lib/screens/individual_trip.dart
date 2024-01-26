@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:traveladic_app/screens/day_to_day.dart';
-import 'package:traveladic_app/screens/luggage.dart';
 import 'package:traveladic_app/screens/pre_trip.dart';
 
 import '../models/trips_model.dart';
 import '../styles/app_styles.dart';
+import 'luggage.dart';
 
 class IndividualTrip extends StatelessWidget {
   const IndividualTrip({super.key, required this.trips});
@@ -14,106 +14,180 @@ class IndividualTrip extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Column(children: [
-              Text('Travelàdic'),
-            ]),
-            Column(children: [
-              Hero(
-                tag: 'avatarTag',
-                child: CircleAvatar(
-                  backgroundImage: NetworkImage(
-                      'https://traveladic.com/wp-content/uploads/2022/06/cropped-LogoEarth-Big.png'),
-                  radius: 20,
-                ),
-              )
-            ]),
-          ],
+        centerTitle: true,
+        title: const Text(
+          'Travelàdic',
+          textAlign: TextAlign.center,
         ),
+        actions: const [
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Hero(
+                  tag: 'avatarTag',
+                  child: CircleAvatar(
+                    backgroundImage: NetworkImage(
+                      'https://traveladic.com/wp-content/uploads/2022/06/cropped-LogoEarth-Big.png',
+                    ),
+                    radius: 20,
+                  ),
+                )
+              ],
+            ),
+          ),
+        ],
       ),
       body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 15),
-          child: Column(
-            children: [
-              Title(
-                color: AppStyles.principal,
-                child: Text(
-                  trips.viatge,
-                  style: const TextStyle(fontSize: 24),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              Text(
-                '${trips.dates} / ${trips.pais}',
-                style: const TextStyle(fontSize: 16),
-              ),
-              AppStyles.separator,
-              const Text(
-                'Itinerari',
-                style: TextStyle(fontSize: 30),
-              ),
-              SizedBox(
-                height: 130,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
+        child: Column(
+          children: [
+            Container(
+              width: double.infinity,
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: NetworkImage(trips.banner),
+                      fit: BoxFit.cover,
+                      colorFilter: ColorFilter.mode(
+                        Colors.black.withOpacity(0.5),
+                        BlendMode.darken,
+                      ))),
+              child: Padding(
+                padding: const EdgeInsets.all(50.0),
+                child: Column(
                   children: [
-                    for (var dia in trips.itinerari)
-                      SizedBox(
-                        width: 130,
-                        child: InkWell(
-                          onTap: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => DayToDay(dia: dia)));
-                          },
-                          child: Card(
-                            shape: RoundedRectangleBorder(
-                              side:
-                                  const BorderSide(color: AppStyles.principal),
-                              borderRadius: BorderRadius.circular(15),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.all(10),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'Dia${dia.dia}',
-                                    style: const TextStyle(
-                                      fontSize: 20,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                  Text(
-                                    dia.titol,
-                                    style: const TextStyle(fontSize: 16),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                      )
+                    Text(
+                      trips.viatge,
+                      style: AppStyles.bigTitle
+                          .copyWith(color: AppStyles.whiteColor),
+                      textAlign: TextAlign.center,
+                    ),
+                    Text(
+                      trips.pais,
+                      style: const TextStyle(color: AppStyles.whiteColor),
+                    )
                   ],
                 ),
               ),
-              AppStyles.bigSeparator,
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 15),
+              child: Column(
                 children: [
-                  Column(
+                  AppStyles.separator,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
-                        'Abans de viatjar',
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold),
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Icon(Icons.calendar_month),
+                            Text(
+                              trips.dates,
+                              textAlign: TextAlign
+                                  .center, // Centra el text horitzontalment
+                            ),
+                          ],
+                        ),
                       ),
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Icon(Icons.language),
+                            Text(
+                              trips.idioma,
+                              textAlign: TextAlign
+                                  .center, // Centra el text horitzontalment
+                            ),
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Icon(Icons.restaurant),
+                            Text(
+                              trips.regim,
+                              textAlign: TextAlign
+                                  .center, // Centra el text horitzontalment
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  AppStyles.bigSeparator,
+                  const Text(
+                    'Itinerari',
+                    style: AppStyles.subTitle,
+                  ),
+                  AppStyles.smallSeparator,
+                  SizedBox(
+                    height: 130,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        for (var dia in trips.itinerari)
+                          SizedBox(
+                            width: 170,
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            DayToDay(dia: dia)));
+                              },
+                              child: Card(
+                                elevation: 5.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(10),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        'Dia ${dia.dia}',
+                                        overflow: TextOverflow.ellipsis,
+                                        style: const TextStyle(
+                                          fontSize: 20,
+                                        ),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                      Text(
+                                        dia.titol,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: const TextStyle(fontSize: 16),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                      Text(
+                                        'Més info',
+                                        style: AppStyles.smallText.copyWith(
+                                            color: AppStyles.blueColor),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          )
+                      ],
+                    ),
+                  ),
+                  AppStyles.bigSeparator,
+                  const Text('Informació important', style: AppStyles.subTitle),
+                  AppStyles.smallSeparator,
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
                       InkWell(
                         onTap: () {
                           Navigator.push(
@@ -124,71 +198,151 @@ class IndividualTrip extends StatelessWidget {
                                       )));
                         },
                         child: Card(
+                            elevation: 8.0,
                             shape: RoundedRectangleBorder(
-                              side:
-                                  const BorderSide(color: AppStyles.principal),
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(5),
                             ),
                             child: const Padding(
-                                padding: EdgeInsets.all(10),
-                                child: Column(
-                                  children: [
-                                    Icon(
-                                      Icons.info,
-                                      size: 100,
-                                    )
-                                  ],
-                                ))),
+                              padding: EdgeInsets.all(18.0),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Column(
+                                    children: [
+                                      Icon(
+                                        Icons.info,
+                                        size: 30,
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Column(
+                                    children: [
+                                      Text(
+                                        'Dades interessants abans de viatjar',
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            )),
                       ),
                     ],
                   ),
+                  AppStyles.smallSeparator,
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
-                        'Essencial de maleta',
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold),
-                      ),
                       InkWell(
                         onTap: () {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Luggage(
-                                      essencialsMaleta:
-                                          trips.essencialsMaleta)));
+                                  builder: (context) => Luggage(trip: trips)));
                         },
                         child: Card(
+                            elevation: 8.0,
                             shape: RoundedRectangleBorder(
-                              side:
-                                  const BorderSide(color: AppStyles.principal),
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(5),
                             ),
                             child: const Padding(
-                                padding: EdgeInsets.all(10),
-                                child: Column(
-                                  children: [
-                                    Icon(
-                                      Icons.luggage,
-                                      size: 100,
-                                    )
-                                  ],
-                                ))),
+                              padding: EdgeInsets.all(18.0),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Column(
+                                    children: [
+                                      Icon(
+                                        Icons.luggage,
+                                        size: 30,
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Column(
+                                    children: [
+                                      Text(
+                                        'Essencials per a teva maleta',
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            )),
                       ),
                     ],
-                  )
+                  ),
+                  AppStyles.bigSeparator,
+                  AppStyles.smallSeparator,
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          const Text('Inclòs', style: AppStyles.subTitle),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              for (var item in trips.inclos)
+                                Row(
+                                  children: [
+                                    const Icon(
+                                      Icons.check,
+                                      color: Colors.green,
+                                    ),
+                                    Text(
+                                      item,
+                                      textAlign: TextAlign.center,
+                                    )
+                                  ],
+                                ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          const Text('No inclòs', style: AppStyles.subTitle),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              for (var item in trips.noInclos)
+                                Row(
+                                  children: [
+                                    const Icon(
+                                      Icons.close,
+                                      color: Colors.red,
+                                    ),
+                                    Text(item)
+                                  ],
+                                )
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ],
-              )
-            ],
-          ),
+              ),
+            ),
+          ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(
-              icon: Icon(Icons.home), label: 'Pàgina principal'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.airplanemode_on), label: 'El teu viatge'),
+            icon: Icon(Icons.home),
+            label: 'Pàgina principal',
+          ),
           BottomNavigationBarItem(
               icon: Icon(Icons.phone), label: "Contacta'ns"),
         ],

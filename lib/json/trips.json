@@ -1,52 +1,61 @@
 [
   {
     "Viatge": "Les Illes Perdudes 1",
-    "País": "Illes Fèroe",
+    "Pais": "Illes Fèroe",
     "id": "feroe1",
     "banner": "https://traveladic.com/wp-content/uploads/2023/03/feroe-poster.jpg",
     "Dates": "1-8 agost",
     "Idioma": "Català",
     "Hotel": "Hilton Garden Inn",
+    "Regim": "Esmorzar",
     "Itinerari":[
       {
         "dia": "1",
         "titol": "Arribada",
-        "descripcio": "descripció dia 1"
+        "descripcio": "Arribada a Illes Fèroe i trasllat a l'hotel a la capital (Tórshavn). Presentació del guia i companys de viatge. Voluntàriament, podem fer un petit tour per la capital per situar-nos i conèixer una mica més el centre neuràlgic de l'arxipèlag.",
+        "cover" : "https://traveladic.com/wp-content/uploads/2023/01/feroe-1.jpg"
       },
       {
         "dia": "2",
-        "titol": "Penya-segats de Vestmanna",
-        "descripcio": "descripció dia 2"
+        "titol": "Vestmanna",
+        "descripcio": "El viatge real comença el segon dia. Avui recorrem amb vaixell els penya-segats de Vestmanna per veure la seva fauna i els ocells que hi habiten. Aquesta és una experiència de 2 hores a través de passatges estrets i coves fosques. \n\n Escoltarem el silenci del mar, així com els ocells i les seves cries. També entendrem com s'ha format aquest paisatge tan impressionant. A la tarda tindrem temps lliure per continuar coneixent Tórshavn.",
+        "cover" : "https://traveladic.com/wp-content/uploads/2023/01/feroe-2.jpg"
       },
       {
         "dia": "3",
-        "titol": "Tórshavn i Kirkjubøur",
-        "descripcio": "descripció dia 3"
+        "titol": "Kirkjubøur",
+        "descripcio": "Avui ens podem aixecar tard, esmorzar i agafar forces per a l'aventura que ens espera després del dinar. Vestigis víkings i cristians ens esperen en un dia que ens farà retrocedir més de 1000 anys al poble de Kirkjubøur. \n\n A la tarda (horari europeu), visitarem el poble de Kirkjubøur, el cor de les Illes Fèroe, amb la catedral de Sant Magnus o l´Església Olaf. També visitarem la casa de fusta habitada més antiga del món, que està dempeus des del segle XI.",
+        "cover" : "https://traveladic.com/wp-content/uploads/2023/01/feroe-3.jpg"
       },
       {
         "dia": "4",
-        "titol": "Vagar i Mykines",
-        "descripcio": "descripció dia 4"
+        "titol": "Mykines i Vagar",
+        "descripcio": "Comencem el dia dirigint-nos a l'illa de Vagar, on visitem els pobles de Gásadalur, amb la seva cascada Múlafossur i Bøur. \n\n Aquell mateix matí agafem el ferri a Mykines, on gaudim d'un espectacle natural sense igual. Aquí es poden veure aus tan peculiars com els frarets o els mascarells. A més, caminarem per llocs semblants als que somiàvem de nens. \n\n Després d'unes 6 hores a Mykines es torna en ferri a Sørvágur i a l'hotel.",
+        "cover" : "https://traveladic.com/wp-content/uploads/2023/01/feroe-4.jpg"
       },
       {
         "dia": "5",
         "titol": "Streymoy i Eysturoy",
-        "descripcio": "descripció dia 5"
+        "descripcio": "Avui ens desplacem, equipatge en mà, cap a un altre allotjament a l'illa de Streymoy. Pel camí gaudim de cascades, pobles, vestigis medievals i un petit trek a Saksun. \n\n Però, a més, avui és un dia de Record Guinness. I és que anem a la muntanya més alta de l'arxipèlag (Slaettartindur (882m) per ser testimonis, si el temps és benèvol, de la vista més llunyana que es pot veure a tot el món: albirarem Vatnajokull, a Islàndia, situat a 540km de distància. \n\n A la tarda arribarem a Gjógv, l'idíl·lic poblet de 35 habitants que ens allotjarà durant 3 nits.",
+        "cover" : "https://traveladic.com/wp-content/uploads/2023/01/feroe-5.jpg"
       },
       {
         "dia": "6",
         "titol": "Illes del nord",
-        "descripcio": "descripció dia 6"
+        "descripcio": "Avui es fa un tour panoràmic per les illes de Kunoy, Bordoy i Vidoy, illes amb petits pobles dominades per altes muntanyes amb precipicis. Es visita també la població més al nord, Vidareidi. A l'illa de Kunoy visitem un petit bosc, únic a les illes, on no abunden els arbres! \n\n A la tarda visitem la ciutat de Klaksvík i un dels llocs més mítics de les illes: la cerveseria de la ciutat.",
+        "cover" : "https://traveladic.com/wp-content/uploads/2023/01/feroe-6.jpg"
       },
       {
         "dia": "7",
         "titol": "Gjógv",
-        "descripcio": "descripció dia 7"
+        "descripcio": "Avui és dia lliure per degustar un dels llocs més màgics de les Illes Fèroe: Gjógv. Però encara que sigui lliure, el nostre guia sempre planeja alguna activitat per gaudir durant el matí o la tarda d'aquest meravellós lloc. Així que és lliure però només si així ho vols. Si pel contrari vols exercitar les cames, apunta't a l'aventura que et prepararem!",
+        "cover" : "https://traveladic.com/wp-content/uploads/2023/01/feroe-7.jpg"
       },
       {
         "dia": "8",
-        "titol": "Gjógv",
-        "descripcio": "descripció dia 8"
+        "titol": "Tornada",
+        "descripcio": "Encara que ens faci mal, avui és el dia de tornada. El transfer a l'aeroport està inclòs. \n\n Abans de les 5 del matí ens recullen a l'hotel i ens porten a l'aeroport en un trajecte d'una hora. A les 7 del matí el nostre vol directe cap a Barcelona s'enlaira per arribar a la capital catalana a les 11:30. \n\n Enrere queden unes illes que, estem segurs, et quedaran gravades a la retina. Segurament sigui un dels llocs més peculiar que hauràs visitat i estem convençuts que marxaràs ple de records i experiències que t'ajudaran a comprendre millor el que ens envolta, així com a tu mateix(a).",
+        "cover" : "https://traveladic.com/wp-content/uploads/2021/11/regreso-a.jpg"
       }
     ],
     "Inclos":[
@@ -55,11 +64,17 @@
       "Guia local",
       "Guia Travelàdic",
       "Trasllat aeroport",
-      "Excursions del planning",
-      "Material necessari per excursions",
-      "Menjar i begudes especificades",
-      "Assistència durant el viatge",
+      "Excursions",
+      "Material excursions",
+      "Àpats especificats",
+      "Assistència",
       "Trasllat aeroport"
+    ],
+    "No inclos":[
+      "Avió",
+      "Àpats no especificats",
+      "Assegurança",
+      "Activitats extra"
     ],
     "Abans de viatjar": [
       "No forma part de la UE",
@@ -104,52 +119,61 @@
   },
   {
     "Viatge": "Les Illes Perdudes 2",
-    "País": "Illes Fèroe",
+    "Pais": "Illes Fèroe",
     "id": "feroe2",
     "banner": "https://traveladic.com/wp-content/uploads/2023/03/feroe-poster.jpg",
     "Dates": "8-15 agost",
     "Idioma": "Català",
     "Hotel": "Hilton Garden Inn",
+    "Regim": "Esmorzar",
     "Itinerari":[
       {
         "dia": "1",
         "titol": "Arribada",
-        "descripcio": "descripció dia 1"
+        "descripcio": "Arribada a Illes Fèroe i trasllat a l'hotel a la capital (Tórshavn). Presentació del guia i companys de viatge. Voluntàriament, podem fer un petit tour per la capital per situar-nos i conèixer una mica més el centre neuràlgic de l'arxipèlag.",
+        "cover" : "https://traveladic.com/wp-content/uploads/2023/01/feroe-1.jpg"
       },
       {
         "dia": "2",
-        "titol": "Penya-segats de Vestmanna",
-        "descripcio": "descripció dia 2"
+        "titol": "Vestmanna",
+        "descripcio": "El viatge real comença el segon dia. Avui recorrem amb vaixell els penya-segats de Vestmanna per veure la seva fauna i els ocells que hi habiten. Aquesta és una experiència de 2 hores a través de passatges estrets i coves fosques. \n\n Escoltarem el silenci del mar, així com els ocells i les seves cries. També entendrem com s'ha format aquest paisatge tan impressionant. A la tarda tindrem temps lliure per continuar coneixent Tórshavn.",
+        "cover" : "https://traveladic.com/wp-content/uploads/2023/01/feroe-2.jpg"
       },
       {
         "dia": "3",
-        "titol": "Tórshavn i Kirkjubøur",
-        "descripcio": "descripció dia 3"
+        "titol": "Kirkjubøur",
+        "descripcio": "Avui ens podem aixecar tard, esmorzar i agafar forces per a l'aventura que ens espera després del dinar. Vestigis víkings i cristians ens esperen en un dia que ens farà retrocedir més de 1000 anys al poble de Kirkjubøur. \n\n A la tarda (horari europeu), visitarem el poble de Kirkjubøur, el cor de les Illes Fèroe, amb la catedral de Sant Magnus o l´Església Olaf. També visitarem la casa de fusta habitada més antiga del món, que està dempeus des del segle XI.",
+        "cover" : "https://traveladic.com/wp-content/uploads/2023/01/feroe-3.jpg"
       },
       {
         "dia": "4",
-        "titol": "Vagar i Mykines",
-        "descripcio": "descripció dia 4"
+        "titol": "Mykines i Vagar",
+        "descripcio": "Comencem el dia dirigint-nos a l'illa de Vagar, on visitem els pobles de Gásadalur, amb la seva cascada Múlafossur i Bøur. \n\n Aquell mateix matí agafem el ferri a Mykines, on gaudim d'un espectacle natural sense igual. Aquí es poden veure aus tan peculiars com els frarets o els mascarells. A més, caminarem per llocs semblants als que somiàvem de nens. \n\n Després d'unes 6 hores a Mykines es torna en ferri a Sørvágur i a l'hotel.",
+        "cover" : "https://traveladic.com/wp-content/uploads/2023/01/feroe-4.jpg"
       },
       {
         "dia": "5",
         "titol": "Streymoy i Eysturoy",
-        "descripcio": "descripció dia 5"
+        "descripcio": "Avui ens desplacem, equipatge en mà, cap a un altre allotjament a l'illa de Streymoy. Pel camí gaudim de cascades, pobles, vestigis medievals i un petit trek a Saksun. \n\n Però, a més, avui és un dia de Record Guinness. I és que anem a la muntanya més alta de l'arxipèlag (Slaettartindur (882m) per ser testimonis, si el temps és benèvol, de la vista més llunyana que es pot veure a tot el món: albirarem Vatnajokull, a Islàndia, situat a 540km de distància. \n\n A la tarda arribarem a Gjógv, l'idíl·lic poblet de 35 habitants que ens allotjarà durant 3 nits.",
+        "cover" : "https://traveladic.com/wp-content/uploads/2023/01/feroe-5.jpg"
       },
       {
         "dia": "6",
         "titol": "Illes del nord",
-        "descripcio": "descripció dia 6"
+        "descripcio": "Avui es fa un tour panoràmic per les illes de Kunoy, Bordoy i Vidoy, illes amb petits pobles dominades per altes muntanyes amb precipicis. Es visita també la població més al nord, Vidareidi. A l'illa de Kunoy visitem un petit bosc, únic a les illes, on no abunden els arbres! \n\n A la tarda visitem la ciutat de Klaksvík i un dels llocs més mítics de les illes: la cerveseria de la ciutat.",
+        "cover" : "https://traveladic.com/wp-content/uploads/2023/01/feroe-6.jpg"
       },
       {
         "dia": "7",
         "titol": "Gjógv",
-        "descripcio": "descripció dia 7"
+        "descripcio": "Avui és dia lliure per degustar un dels llocs més màgics de les Illes Fèroe: Gjógv. Però encara que sigui lliure, el nostre guia sempre planeja alguna activitat per gaudir durant el matí o la tarda d'aquest meravellós lloc. Així que és lliure però només si així ho vols. Si pel contrari vols exercitar les cames, apunta't a l'aventura que et prepararem!",
+        "cover" : "https://traveladic.com/wp-content/uploads/2023/01/feroe-7.jpg"
       },
       {
         "dia": "8",
-        "titol": "Gjógv",
-        "descripcio": "descripció dia 8"
+        "titol": "Tornada",
+        "descripcio": "Encara que ens faci mal, avui és el dia de tornada. El transfer a l'aeroport està inclòs. \n\n Abans de les 5 del matí ens recullen a l'hotel i ens porten a l'aeroport en un trajecte d'una hora. A les 7 del matí el nostre vol directe cap a Barcelona s'enlaira per arribar a la capital catalana a les 11:30. \n\n Enrere queden unes illes que, estem segurs, et quedaran gravades a la retina. Segurament sigui un dels llocs més peculiar que hauràs visitat i estem convençuts que marxaràs ple de records i experiències que t'ajudaran a comprendre millor el que ens envolta, així com a tu mateix(a).",
+        "cover" : "https://traveladic.com/wp-content/uploads/2021/11/regreso-a.jpg"
       }
     ],
     "Inclos":[
@@ -158,11 +182,17 @@
       "Guia local",
       "Guia Travelàdic",
       "Trasllat aeroport",
-      "Excursions del planning",
-      "Material necessari per excursions",
-      "Menjar i begudes especificades",
-      "Assistència durant el viatge",
+      "Excursions",
+      "Material excursions",
+      "Àpats especificats",
+      "Assistència",
       "Trasllat aeroport"
+    ],
+    "No inclos":[
+      "Avió",
+      "Àpats no especificats",
+      "Assegurança",
+      "Activitats extra"
     ],
     "Abans de viatjar": [
       "No forma part de la UE",
@@ -208,52 +238,58 @@
 
   {
     "Viatge": "La Perla Atlántica",
-    "País": "Açores (Portugal)",
+    "Pais": "Açores (Portugal)",
     "id": "acores1",
-    "banner": "https://traveladic.com/wp-content/uploads/2023/03/acores-poster.jpg",
+    "banner": "https://traveladic.com/wp-content/uploads/2022/12/acores-poster.jpg",
     "Dates": "16-23 agost",
     "Idioma": "Català",
     "Hotel": "Hilton Garden Inn",
+    "Regim": "Esmorzar + pícnics",
     "Itinerari":[
       {
         "dia": "1",
         "titol": "Arribada",
-        "descripcio": "descripció dia 1"
+        "descripcio": "Arribada a Sao Miguel i trasllat privat des de l'aeroport al nostre allotjament. La resta del dia és lliure i, arribat el moment, us aconsellarem diferents llocs per gaudir d'aquest primer contacte amb aquestes illes portugueses."
       },
       {
         "dia": "2",
-        "titol": "Penya-segats de Vestmanna",
-        "descripcio": "descripció dia 2"
+        "titol": "Furnas",
+        "descripcio": "Sortida des de l'hotel direcció Furnas per començar el trek a Furnas (9.5km-Fàcil). Des del cim d'aquesta cota es pot gaudir de la vista sobre la vall de Furnas. Baixem trobant-nos edificis rellevants fins a la zona de Caldeiras on, a causa de l'activitat geotèrmica, es fa el famós i tradicional Cozido. \n\n Per la tarda, visitem el Jardí Terra Nostra, considerat un dels jardins més bonics d'Europa, on podem gaudir d'una piscina termal per refrescar-nos. Continuem el viatge visitant diferents indrets fins a arribar, de nou, a Ponta Delgada."
       },
       {
         "dia": "3",
-        "titol": "Tórshavn i Kirkjubøur",
-        "descripcio": "descripció dia 3"
+        "titol": "Balenes i Vale das Sete Cidades",
+        "descripcio": "Anem al port esportiu per realitzar una de les experiències més extraordinàries que existeixen: l'observació de balenes i dofins. \n\n A la tarda, sortim cap a la part més estreta de l'illa (oest). Aquest paisatge es va formar fa milions d'anys per l'erupció de 290 petits volcans. El trajecte va fins a Lagoa do Canário on fem una petita caminada fins a arriba al Mirador de la Boca do Inferno. El recorregut continua fins a la 'Vista do Rei', el famós mirador de l'illa amb la magnífica vista sobre la vall de Sete Cidades. Un cop a Sete Cidades tenim temps lliure per passejar abans de tornar a l'hotel."
       },
       {
         "dia": "4",
-        "titol": "Vagar i Mykines",
-        "descripcio": "descripció dia 4"
+        "titol": "Rocha da Relva",
+        "descripcio": "Sortida de Ponta Delgada cap a Relva per començar el trekking del dia (5,5km - Moderat). Aquesta ruta lineal d'anada i tornada fins a Rocha da Relva permet a l'excursionista visitar un dels pocs penya-segats detrítics de São Miguel. \n\n Un cop arribem al nivell del mar, ens relaxem i recarreguem energia per després pujar el mateix camí fins al punt de partida. \n\n A la tarda, gaudim de temps lliure per descansar o gaudir de Ponta Delgada."
       },
       {
         "dia": "5",
-        "titol": "Streymoy i Eysturoy",
-        "descripcio": "descripció dia 5"
+        "titol": "Lagoa do Fogo",
+        "descripcio": "Sortida de l'hotel cap a Lagoa per visitar la històrica fàbrica de ceràmica Vieira. Després pugem (amb vehicle) a la muntanya (900 m d'altitud) per admirar la magnífica vista sobre Lagoa do Fogo, l'única llacuna a l'illa. \n\n Després d'aquest inici comencem el descens cap a la ciutat de Ribeira Grande, amb parada a Caldeira Velha, un indret on és possible gaudir de quatre piscines termals. \n\n Després de dinar, visitem a peu per la ciutat de Ribeira Grande per veure llocs d'interés abans de tornar a l'hotel."
       },
       {
         "dia": "6",
-        "titol": "Illes del nord",
-        "descripcio": "descripció dia 6"
+        "titol": "Ribeira dos Caldeiroes",
+        "descripcio": "Sortida de l'hotel per la costa sud fins a “Faial da Terra” on comencem el trek (4.5km - Moderat). Aquest sender segueix una riera fins a una bonica cascada. Passem pel petit poble de 'Sanguinho', que té unes vint cases i està en procés de recuperació fins que arribem de nou a Faial de Terra. \n\n A la tarda, visitem el Parc Natural de Ribeira dos Caldeirões. Aquí podem trobar cascades i un llac. Dins del Parc Natural de la Ribeira dos Caldeirões hi ha cinc molins d'aigua, tres d'ells classificats com a Béns d'Interès Públic. Retorn a Ponta Delgada per sopar."
       },
       {
         "dia": "7",
-        "titol": "Gjógv",
-        "descripcio": "descripció dia 7"
+        "titol": "Transfer a Faial",
+        "descripcio": "Després d'esmorzar canviem d'illa via vol directe de Sao Miguel a Faial. Un cop arribats a Faial ens traslladem a Horta on s'ubica el nostre hotel. \n\n Després de dinar, visitem a peu la ciutat d'Horta. El recorregut inclou visites pel port esportiu d'Horta i una visita al Museu Scrimshaw. \n\n Al final farem una degustació de la famosa ginebra al Peter Café Sport."
       },
       {
         "dia": "8",
-        "titol": "Gjógv",
-        "descripcio": "descripció dia 8"
+        "titol": "Jardí botànic",
+        "descripcio": "Sortida d'Horta cap a Espalamaca per a una bonica vista sobre la ciutat. Visitem el Jardí Botànic de Faial on tenim l'oportunitat de descobrir les plantes més rares de l'illa. \n\n Ascens, en vehicle, al cràter Caldeira, el punt més alt d'aquesta illa, passant per Vale dos Flamengos. \n\n Després de dinar, parem al volcà Capelinhos, on han succeït els fenòmens volcànics més impressionants dels darrers anys. Visitem el seu Centre d'Interpretació. Després de visitar el Capelinhos, passegem fins a l'oceà abans de tornar cap a l'hotel."
+      },
+      {
+        "dia": "9",
+        "titol": "Tour 4x4",
+        "descripcio": "Encara que ens faci mal, avui serà el dia de tornada. El transfer a l'aeroport està inclòs. \n\n Les Açores és un lloc poc visitat pels catalans, però és un paratge espectacular. Degut a la seva extraordinària bellesa natural i a la cultura atlàntica que posseeix, aquest indret està guanyant protagonisme any rere any. Poder-lo visitar sense sentir-nos dins d'una llauna de sardines és una experiència inigualable. \n\n Quan marxem de les açores us ben asseguro que sentireu que hi deixeu una part de vosaltres allà. Així són aquestes illes..."
       }
     ],
     "Inclos":[
@@ -262,11 +298,17 @@
       "Guia local",
       "Guia Travelàdic",
       "Trasllat aeroport",
-      "Excursions del planning",
-      "Material necessari per excursions",
-      "Menjar i begudes especificades",
-      "Assistència durant el viatge",
+      "Excursions",
+      "Material excursions",
+      "Àpats especificats",
+      "Assistència",
       "Trasllat aeroport"
+    ],
+    "No inclos":[
+      "Avió",
+      "Àpats no especificats",
+      "Assegurança",
+      "Activitats extra"
     ],
     "Abans de viatjar": [
       "No forma part de la UE",
@@ -277,26 +319,23 @@
       "Endoll: tipus K. El de Catalunya funciona"
     ],
     "Essencials Maleta": [
-      "Peces tèrmiques superiors i inferiors",
-      "Samarretes de màniga llarga",
-      "Jersei de llana/punt",
-      "Mitjons tèrmics o de llana (o els dos)",
-      "Guants de llana o tèrmics",
-      "Guants d’esquí",
-      "Bufanda o buf",
-      "Capell (gorro) de punt extra o de llana",
-      "Pantalons de senderisme alpí",
+      "Impermeable amb caputxa (que sigui per vent també)",
+      "Mitjons de recanvi",
+      "Mitjons més calentons pel vespre",
       "Botes goretex",
-      "Descansos o bambes impermeables més còmodes",
-      "Anorak empalfat per dins i resistent a l’aigua per fora de -10/-20º",
-      "Texans o pantalons normals per estar dins l’hotel o el restaurant",
-      "Motxilla per excursions on càpiga aigua i roba",
-      "Protector impermeable motxilla per protegir el que hi ha dins",
-      "Samarreta d’esport per activitats tipus raquetes de neu",
-      "Grampons (si vols fer algun trek, per exemple a Fjellheisen)",
-      "Prismàtics (perfectes per a observar balenes)",
-      "Ulleres o protecció per “ventisca”",
-      "Protecció solar (és d’aquelles coses que no utilitzaràs)",
+      "Calçat de recanvi per a temps lliure",
+      "Pantalons normals per estar dins l’hotel o el restaurant",
+      "Suadora pels vespres",
+      "Jaqueta pels vespres",
+      "Samarretes d’esport transpirables",
+      "Pantalons curts per si t’agrada caminar amb les cames fresques",
+      "Banyador vell per aigües termals",
+      "Banyador normal per mar i piscina",
+      "Motxilla per a excursions",
+      "Prismàtics",
+      "Protecció solar",
+      "Protector impermeable mochila",
+      "Plàstics impermeables (com els dels líquids a l’avió)",
       "Plàstics impermeables (com els dels líquids a l’avió)",
       "Bateria portàtil si el teu mòbil es descarrega ràpid",
       "Medicaments per ferides",
@@ -304,9 +343,14 @@
       "Utensilis per butllofes",
       "Medicaments per dolor general (paracetamols i ibuprofens)",
       "Pastilles pel mareig (cotxe i ferri són habituals)",
+      "Efectiu (euros) per pagaments més locals",
+      "Pals de trekking. No són necessaris però no fan nosa",
       "Pijama",
       "Articles d’higiene",
-      "Kleenex (el nas es convertirà en una font)"
+      "Wikiloc",
+      "Gorra",
+      "Ulleres de sol"
     ]
   }
+]
 ]
