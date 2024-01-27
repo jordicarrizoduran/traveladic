@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../models/trips_model.dart';
 import '../providers/preferences_provider.dart';
 import '../styles/app_styles.dart';
+import 'contact.dart';
 
 class Luggage extends StatefulWidget {
   const Luggage({super.key, required this.trip});
@@ -66,6 +67,7 @@ class _LuggageState extends State<Luggage> {
                 AppStyles.smallSeparator,
                 for (var essencials in widget.trip.essencialsMaleta)
                   CheckboxListTile(
+                    activeColor: AppStyles.principal,
                     title: Text(essencials),
                     controlAffinity: ListTileControlAffinity.leading,
                     value: luggageCheckList.isChecked(tripKey, essencials),
@@ -78,6 +80,37 @@ class _LuggageState extends State<Luggage> {
               ],
             ),
           ),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: 0,
+          selectedItemColor: AppStyles.footerText,
+          unselectedItemColor: AppStyles.footerText,
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home,
+              ),
+              label: 'Pàgina principal',
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.phone), label: "Contacta'ns"),
+          ],
+          onTap: (index) {
+            if (index == 0) {
+              Navigator.of(context).popUntil((route) => route.isFirst);
+            }
+
+            if (index == 1) {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Contact(),
+                ),
+              );
+            }
+          },
+
+          // Per fer CALLS --> https://www.youtube.com/watch?v=ui4oF6qzAE8
         ),
       );
     });

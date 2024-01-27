@@ -4,6 +4,7 @@ import 'package:traveladic_app/screens/pre_trip.dart';
 
 import '../models/trips_model.dart';
 import '../styles/app_styles.dart';
+import 'contact.dart';
 import 'luggage.dart';
 
 class IndividualTrip extends StatelessWidget {
@@ -139,8 +140,10 @@ class IndividualTrip extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) =>
-                                            DayToDay(dia: dia)));
+                                        builder: (context) => DayToDay(
+                                              dia: dia,
+                                              trips: trips,
+                                            )));
                               },
                               child: Card(
                                 elevation: 5.0,
@@ -171,7 +174,7 @@ class IndividualTrip extends StatelessWidget {
                                       Text(
                                         'Més info',
                                         style: AppStyles.smallText.copyWith(
-                                            color: AppStyles.blueColor),
+                                            color: AppStyles.principal),
                                       )
                                     ],
                                   ),
@@ -338,14 +341,35 @@ class IndividualTrip extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0,
+        selectedItemColor: AppStyles.footerText,
+        unselectedItemColor: AppStyles.footerText,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(
+              Icons.home,
+            ),
             label: 'Pàgina principal',
           ),
           BottomNavigationBarItem(
               icon: Icon(Icons.phone), label: "Contacta'ns"),
         ],
+        onTap: (index) {
+          if (index == 0) {
+            Navigator.of(context).popUntil((route) => route.isFirst);
+          }
+
+          if (index == 1) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const Contact(),
+              ),
+            );
+          }
+        },
+
+        // Per fer CALLS --> https://www.youtube.com/watch?v=ui4oF6qzAE8
       ),
     );
   }

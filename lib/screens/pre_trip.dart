@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:traveladic_app/styles/app_styles.dart';
 
+import 'contact.dart';
+
 class PreTrip extends StatelessWidget {
   const PreTrip({
     super.key,
@@ -37,33 +39,66 @@ class PreTrip extends StatelessWidget {
           ),
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 15),
-        child: Column(
-          children: [
-            const Text(
-              'Dades interessants abans de viatjar',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            AppStyles.smallSeparator,
-            for (var dada in abansDeViatjar)
-              Row(
-                children: [
-                  const Icon(
-                    Icons.fact_check,
-                    color: Colors.green,
-                  ),
-                  const SizedBox(
-                    width: 5,
-                  ),
-                  Text(
-                    dada,
-                    textAlign: TextAlign.center,
-                  )
-                ],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 15),
+          child: Column(
+            children: [
+              const Text(
+                'Dades interessants abans de viatjar',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-          ],
+              AppStyles.smallSeparator,
+              for (var dada in abansDeViatjar)
+                Row(
+                  children: [
+                    const Icon(
+                      Icons.fact_check,
+                      color: Colors.green,
+                    ),
+                    const SizedBox(
+                      width: 5,
+                    ),
+                    Text(
+                      dada,
+                      textAlign: TextAlign.center,
+                    )
+                  ],
+                ),
+            ],
+          ),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0,
+        selectedItemColor: AppStyles.footerText,
+        unselectedItemColor: AppStyles.footerText,
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+            ),
+            label: 'Pàgina principal',
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.phone), label: "Contacta'ns"),
+        ],
+        onTap: (index) {
+          if (index == 0) {
+            Navigator.of(context).popUntil((route) => route.isFirst);
+          }
+
+          if (index == 1) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const Contact(),
+              ),
+            );
+          }
+        },
+
+        // Per fer CALLS --> https://www.youtube.com/watch?v=ui4oF6qzAE8
       ),
     );
   }
