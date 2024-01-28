@@ -287,50 +287,65 @@ class IndividualTrip extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          const Text('Inclòs', style: AppStyles.subTitle),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              for (var item in trips.inclos)
-                                Row(
-                                  children: [
-                                    const Icon(
-                                      Icons.check,
-                                      color: Colors.green,
-                                    ),
-                                    Text(
-                                      item,
-                                      textAlign: TextAlign.center,
-                                    )
-                                  ],
-                                ),
-                            ],
-                          ),
-                        ],
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            const Text('Inclòs', style: AppStyles.subTitle),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                for (var item in trips.inclos)
+                                  Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      const Icon(
+                                        Icons.check,
+                                        color: Colors.green,
+                                      ),
+                                      Expanded(
+                                        child: Text(
+                                          item,
+                                          textAlign: TextAlign.start,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          const Text('No inclòs', style: AppStyles.subTitle),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              for (var item in trips.noInclos)
-                                Row(
-                                  children: [
-                                    const Icon(
-                                      Icons.close,
-                                      color: Colors.red,
-                                    ),
-                                    Text(item)
-                                  ],
-                                )
-                            ],
-                          ),
-                        ],
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            const Text('No inclòs', style: AppStyles.subTitle),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                for (var item in trips.noInclos)
+                                  Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      const Icon(
+                                        Icons.close,
+                                        color: Colors.red,
+                                      ),
+                                      Expanded(
+                                        child: Text(
+                                          item,
+                                          textAlign: TextAlign.start,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
@@ -368,8 +383,6 @@ class IndividualTrip extends StatelessWidget {
             );
           }
         },
-
-        // Per fer CALLS --> https://www.youtube.com/watch?v=ui4oF6qzAE8
       ),
     );
   }

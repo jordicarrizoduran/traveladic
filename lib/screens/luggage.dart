@@ -66,16 +66,30 @@ class _LuggageState extends State<Luggage> {
                 ),
                 AppStyles.smallSeparator,
                 for (var essencials in widget.trip.essencialsMaleta)
-                  CheckboxListTile(
-                    activeColor: AppStyles.principal,
-                    title: Text(essencials),
-                    controlAffinity: ListTileControlAffinity.leading,
-                    value: luggageCheckList.isChecked(tripKey, essencials),
-                    onChanged: (bool? value) {
-                      luggageCheckList.setIsChecked(
-                          tripKey, essencials, value ?? false);
-                    },
-                    contentPadding: EdgeInsets.zero,
+                  Row(
+                    children: [
+                      Checkbox(
+                        activeColor: AppStyles.principal,
+                        value: luggageCheckList.isChecked(tripKey, essencials),
+                        onChanged: (bool? value) {
+                          luggageCheckList.setIsChecked(
+                            tripKey,
+                            essencials,
+                            value ?? false,
+                          );
+                        },
+                      ),
+                      Flexible(
+                        child: Wrap(
+                          children: [
+                            Text(
+                              essencials,
+                              overflow: TextOverflow.visible,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
               ],
             ),

@@ -51,6 +51,7 @@ class PreTrip extends StatelessWidget {
               AppStyles.smallSeparator,
               for (var dada in abansDeViatjar)
                 Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Icon(
                       Icons.fact_check,
@@ -59,9 +60,12 @@ class PreTrip extends StatelessWidget {
                     const SizedBox(
                       width: 5,
                     ),
-                    Text(
-                      dada,
-                      textAlign: TextAlign.center,
+                    Expanded(
+                      child: Text(
+                        dada,
+                        textAlign: TextAlign.start,
+                        softWrap: true,
+                      ),
                     )
                   ],
                 ),

@@ -72,7 +72,7 @@
     ],
     "No inclos":[
       "Avió",
-      "Àpats no especificats",
+      "Àpats no especificats i més text per crear un overflow tan gran com sigui possible",
       "Assegurança",
       "Activitats extra"
     ],
@@ -80,12 +80,12 @@
       "No forma part de la UE",
       "La moneda oficial és el DKK",
       "Necessitaràs roaming o comprar una SIM",
-      "La temperatura mitjana a l'agost és d'uns 11ºC",
+      "La temperatura mitjana a l'agost és d'uns 11ºC i més text per crear un overflow tan gran com sigui possible i més text per crear un overflow tan gran com sigui possible",
       "Plou molt. Porta impermeable",
       "Endoll: tipus K. El de Catalunya funciona"
     ],
     "Essencials Maleta": [
-      "Peces tèrmiques superiors i inferiors",
+      "Peces tèrmiques superiors i inferiors i més text per crear un overflow tan gran com sigui possible i més text per crear un overflow tan gran com sigui possible",
       "Samarretes de màniga llarga",
       "Jersei de llana/punt",
       "Mitjons tèrmics o de llana (o els dos)",
@@ -352,5 +352,4 @@
       "Ulleres de sol"
     ]
   }
-]
 ]
