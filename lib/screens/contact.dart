@@ -256,7 +256,7 @@ class Contact extends StatelessWidget {
     final Uri emailUri = Uri(
       scheme: 'mailto',
       path: 'info@traveladic.com',
-      queryParameters: {'subject': 'Hello from Flutter!'},
+      queryParameters: {'subject': 'Dubte sobre Travelàdic'},
     );
 
     // final String emailUrl = emailUri.toString();
